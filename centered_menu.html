@@ -1,0 +1,89 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>Centered Menu Setup</title>
+	<style type="text/css">
+		body, ul {
+			margin : 0px;
+			padding: 0px;
+			text-align: center;
+		}
+		
+		/** Navigation style **/
+		.navigation_container {	
+			width : 800px;
+			margin: 10px auto;
+			height: 30px;
+		}
+		
+		ul#menu_main,
+		ul#menu_main ul {
+			line-height: 30px;
+			list-style: none;
+			display: block;
+			
+		}
+		
+		ul#menu_main li {
+			display: inline;
+			margin: 0px 20px;
+			position: relative;
+		}
+		ul#menu_main a,
+		ul#menu_main a:link,
+		ul#menu_main a:visited {
+			color : #A9532D;
+		}
+
+		ul#menu_main a.active,
+		ul#menu_main a:hover {
+			color : #FF532D;
+		}
+		
+		ul#menu_main ul {
+			display: none;
+		}
+		
+		ul#menu_main .menu_open ul {
+			display: block;
+			position: absolute;
+			left: -20px;
+			width :200px;
+			background: white;
+			border: 1px solid #CCCCCC;
+			border-top: 0px;
+		}
+		ul#menu_main ul li {
+			text-align: left;
+			display: block;
+		}
+	</style>
+</head>
+<body>
+	<div class="navigation_container">
+		<ul id="menu_main">
+			<li class="navigation_item">
+				<a href="centered_menu.html">Sub item 1</a>
+			</li>
+			<li class="navigation_item">
+				<a href="centered_menu.html">Sub item 1</a>
+				<ul >
+					<li class="navigation_item">
+						<a href="centered_menu.html">Sub item 1</a>
+					</li>
+					<li class="navigation_item">
+						<a href="centered_menu.html">Sub item 1</a>
+					</li>
+					<li class="navigation_item">
+						<a href="centered_menu.html">Sub item 1</a>
+					</li>
+				</ul>
+			</li>
+			<li class="navigation_item">
+				<a href="centered_menu.html">Sub item 1</a>
+			</li>
+		</ul>
+	</div>
+</body>
+</html>
